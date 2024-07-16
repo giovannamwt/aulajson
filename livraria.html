@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./livraria.css">
+    <title>Livraria</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Catálogo de livros da Infinity</h1>
+        <div id="catalogo">
+        </div>
+        <div id="addbook-form">
+            <h2>
+                Adicionar novo livro
+            </h2>
+        <input type="text" id="titulo" placeholder="titulo">
+        <input type="text" id="autor" placeholder="autor">
+        <input type="text" id="genero" placeholder="genero">
+        <input type="text" id="ano" placeholder="ano">
+        <button onclick="addBook()">Cadastrar</button>
+        </div>
+
+        <div id="search-form">
+            <input type="text" id="termo" placeholder="Pesquisar ">
+            <button onclick="searchBook()">Pesquisar 🔎</button>
+        </div>
+
+    </div>
+    <script src="livraria.js"></script>
+</body>
+</html>
